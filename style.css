@@ -1,0 +1,353 @@
+
+@import url("root.css");
+
+body {
+  margin: 0;
+}
+
+.box-container {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.home-page {
+  background-image: url(img/background-img-carousel/background-img-carousel-1.png);
+  background-size: cover;
+  transition: 0.7s ease-out;
+  height: 100vh;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.main-nav{
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button-menu-toggle {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://i.postimg.cc/yNcK65Gc/close.png);
+    cursor: pointer;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-nav-link:link{
+  text-decoration: none;
+}
+
+.main-nav-link{
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-size: 1.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.main-content h2 {
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-size: 1.90rem;
+  font-weight: var(--font-weight-700);
+  margin: 0;
+}
+
+.main-content h1 {
+  color: var(--primary-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: var(--century-gothic-font-family);
+  font-size: 4rem;
+  font-weight: var(--font-weight-700);
+  margin: 1.5rem 0 0 0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.cta-buttons button {
+  width: 13rem;
+  height: 3.75rem;
+  border-radius: 4.25rem;
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-size: 1.25rem;
+  margin-top: 5rem;
+}
+
+.cta-buttons button:first-child {
+  background-color: transparent;
+  border: 2px solid var(--light-text-color);
+}
+
+.cta-buttons button:last-child {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.dots {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  left: calc(50% - 60px);
+  bottom: 3.5rem;
+  
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color:  var(--light-text-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #808080;
+  transition: 0.2s ease-out;
+}
+
+.active-dot {
+  background-color: var(--primary-color);
+  transition: 0.2s ease-out;
+}
+
+/* section with gradient bg */
+
+.section-gradient-bg {
+  height: 60vh;
+  padding-top: 5.5rem;
+  background: linear-gradient(180deg, #F2ECCC 0%, rgba(242, 236, 204, 0.00) 100%);
+}
+
+.section-gradient-bg h1, .white-section h1 {
+  text-transform: uppercase;
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+/* slider styles */
+
+.colored-wrapper {
+  margin-top: 4rem;
+  background-color: var(--primary-darck-color);
+  padding: 5rem 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper i {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: var(--light-text-color);
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+  margin-left: 10px;
+  left: -23px;
+  display: none;
+}
+
+.wrapper i:last-child {
+  margin-right: 10px;
+  right: -23px;
+}
+
+.wrapper .carousel {
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap; /* put all images in one line */
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 16rem;
+  object-fit: cover;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+/* third section */
+
+.white-section {
+  padding: 4rem 0;
+}
+
+ .recent-pictures-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+ }
+
+ .recent-picture-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+ }
+
+ .orange-button {
+  background-color: var(--primary-color);
+  border-radius: 1.1rem;
+  border: none;
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-size: 1rem;
+  font-weight: var(--font-weight-400);
+  max-width: 9.5rem;
+  height: 2rem;
+ }
+
+ .recent-picture-container p {
+  margin-top: 1.75rem;
+  font-family: var(--lato-font-family);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2rem;
+ }
+
+ .recent-picture-container button {
+  margin-left: 50%;
+  margin-top: 3rem;
+ }
+
+ /* footer */
+
+ footer {
+  padding: 3rem 0;
+  background-color: var(--primary-darck-color);
+ }
+
+ .social-media {
+  display: flex;
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-size: 1rem;
+  font-weight: var(--font-weight-400);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .social-media img {
+  object-fit: cover;
+  width: 2rem;
+  height: 2rem;
+ }
+
+ .icon-name-social-media {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 9px;
+ }
+
+ .under-line-social-media {
+  width: 30%;
+  height: 1px;
+  background-color: var(--light-text-color);
+  margin: 23px 35%;
+ }
+
+ .main-footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1.5rem 0;
+ }
+
+ .input-button {
+  display: flex;
+  justify-content: center;
+  height: 3.4rem;
+ }
+
+ .input-button input {
+  border-radius: 3px 0 0 3px;
+  border: none;
+  width: 18rem;
+ }
+
+ .input-button input::placeholder {
+  color: #8F8F8F;
+  font-family: var(--lato-font-family);
+  font-size: 1rem;
+  padding-left: 18px;
+ }
+
+ .input-button input:focus-visible {
+  outline: none;
+ }
+
+ .input-button button {
+  width: 11rem;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  background-color: var(--primary-color);
+ }
+
+ .copy-right {
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-size: 1rem;
+ }
+
+ .links-container {
+  display: flex;
+  gap: 40%;
+ }
+
+ .links-container a {
+  color: var(--light-text-color);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--lato-font-family);
+  font-size: 1rem;
+ }
+
+ .left-link-container, .right-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
