@@ -41,12 +41,12 @@
   margin-top: 5rem;
 }
 
-.cta-buttons button:first-child {
+.cta-buttons a:first-child button {
   background-color: transparent;
   border: 2px solid var(--light-text-color);
 }
 
-.cta-buttons button:last-child {
+.cta-buttons a:last-child button {
   background-color: var(--primary-color);
   border: none;
 }

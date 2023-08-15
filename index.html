@@ -11,18 +11,20 @@
   <link rel="stylesheet" href="media-query.css">
 </head>
 <body>
-  <section class="home-page">
+  <section class="home-page" id="home-page">
     <header>
       <nav class="main-nav">
+        <a href="#home-page">
           <img src="img/logo.png" alt="Logo">
+        </a>
           <div class="menu-toggle" onclick="menuToggle()"></div>
         <ul class="nav-links">
           <div class="close-button-menu-toggle" onclick="menuToggle()"></div>
           <li>
-            <a href="#" class="main-nav-link">Bibliografie</a>
+            <a href="bibliografie/" class="main-nav-link">Bibliografie</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Galerie</a>
+            <a href="galerie/" class="main-nav-link">Galerie</a>
           </li>
           <li>
             <a href="#" class="main-nav-link">Proiecte</a>
@@ -41,8 +43,12 @@
       <h2>Explorează lumea artei cu</h2>
       <h1>Alex Katz</h1>
       <div class="cta-buttons">
-        <button>Citeste mai mult</button>
-        <button>Vezi galeria</button>
+        <a href="bibliografie/">
+          <button>Citeste mai mult</button>
+        </a>
+        <a href="galerie/">
+          <button>Vezi galeria</button>
+        </a>
       </div>
     </article>
 
@@ -124,32 +130,40 @@
 
   <footer>
     <div class="social-media">
-      <div class="icon-name-social-media">
-        <img src="img/icons/instagram-icon.png" alt="Instagram-icon">
-        <p>Instagram</p>
-      </div>
-      <div class="icon-name-social-media">
-        <img src="img/icons/facebook-icon.png" alt="facebook-icon">
-        <p>Facebook</p>
-      </div>
-      <div class="icon-name-social-media">
-        <img src="img/icons/twitter-icon.png" alt="twitter-icon">
-        <p>Twitter</p>
-      </div>
+      <a href="https://www.instagram.com/alexkatzofficial/">
+        <div class="icon-name-social-media">
+          <img src="img/icons/instagram-icon.png" alt="Instagram-icon">
+          <p>Instagram</p>
+        </div>
+      </a>
+      <a href="https://www.facebook.com/AlexKatzPrints/">
+        <div class="icon-name-social-media">
+          <img src="img/icons/facebook-icon.png" alt="facebook-icon">
+          <p>Facebook</p>
+        </div>
+      </a>
+      <a href="https://twitter.com/alexkatz_art">
+        <div class="icon-name-social-media">
+          <img src="img/icons/twitter-icon.png" alt="twitter-icon">
+          <p>Twitter</p>
+        </div>
+      </a>
     </div>
 
     <div class="under-line-social-media"></div>
 
     <div class="main-footer-container">
-      <img src="img/logo.png" alt="Logo">
+      <a href="#home-page">
+        <img src="img/logo.png" alt="Logo">
+      </a>
       <div class="input-button">
         <input type="text" placeholder="Adresa email">
         <button>aboneaza-te</button>
       </div>
       <div class="links-container">
         <div class="left-link-container">
-          <a href="№">Bibliografie</a>
-          <a href="№">Galerie</a>
+          <a href="bibliografie/">Bibliografie</a>
+          <a href="galerie/">Galerie</a>
           <a href="№">Proiecte</a>
         </div>
         <div class="right-link-container">
@@ -161,6 +175,6 @@
     <p class="copy-right box-container">Copyright &#169; 2023 Artist | Powered by Artist</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" ></script>
 </body>
 </html>

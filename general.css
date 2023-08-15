@@ -2,6 +2,7 @@
   --light-text-color: #fff;
   --primary-color: #FF7E33;
   --primary-darck-color: #4E4444;
+  --primary-beige-color: #F2ECCC;
   --lato-font-family: "Lato", sans-serif;
   --century-gothic-font-family: "Century Gothic";
   --font-weight-400: 400;
@@ -15,6 +16,10 @@ body {
 .box-container {
   margin: 0 auto;
   max-width: 1500px;
+}
+
+button {
+  cursor: pointer;
 }
 
 .home-page {
@@ -41,13 +46,13 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   position: fixed;
-  transition: all 1s;
+  transition: all 0.5s;
   z-index: 100;
 }
 
 .main-nav.active {
   background-color: var(--primary-darck-color);
-  transition: all 1s;
+  transition: all 0.5s;
   box-shadow: 0 2px 30px rgba(97, 97, 97, 0.9);
 
 }
@@ -75,6 +80,15 @@ body {
 
 .white-section {
   padding: 4rem 0;
+}
+
+.beige-section {
+  background-color: var(--primary-beige-color);
+  padding: 4rem 0;
+}
+
+.brown-section {
+  background-color: var(--primary-darck-color);
 }
 
 .orange-button {
@@ -115,10 +129,15 @@ body {
  }
 
  .icon-name-social-media {
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+ }
+
+ .social-media a {
+  text-decoration: dashed;
+  color: var(--light-text-color);
  }
 
  .under-line-social-media {
