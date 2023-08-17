@@ -1,1 +1,166 @@
 @import url(../general.css);
+
+.gallery-orange-button {
+  font-size: 1.25rem;
+  width: 284px;
+  height: 73px;
+  border-radius: 68px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-weight: var(--font-weight-400);
+}
+
+.home-page {
+  background-image: url(../img/Galery-img/background-img.png);
+  height: 100vh;
+  position: relative;
+}
+
+.paint-stain-1 {
+  position: absolute;
+  top: 140vh;
+  right: 0;
+}
+
+.paint-stain-2 {
+  position: absolute;
+  z-index: 2;
+  top: -27%;
+  left: 27%;
+}
+
+.title-page {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  font-family: var(--century-gothic-font-family);
+  font-size: 3.3rem;
+  font-weight: var(--font-weight-400);
+  color: var(--light-text-color);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.text-container h2, .beige-section h2{
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+.text-container p, .image-container p {
+  font-family: var(--lato-font-family);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2rem;
+  max-width: 400px;
+}
+
+.face-of-poet-photos-container, .a-tremour-in-the-morning-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "a c"
+  "b c";
+  place-items: center;
+  gap: 3.5rem;
+}
+
+.photo1-face-of-poet {
+  grid-area: a;
+}
+
+.photo2-face-of-poet {
+  grid-area: b;
+}
+
+.photo3-face-of-poet {
+  grid-area: c;
+}
+
+.night-and-day-main-container, .daytona-beach-series-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7.5rem;
+  justify-content: center;
+  align-items: start;
+  margin: 3rem 0;
+  margin-top: 4rem;
+}
+
+.beige-section h2 {
+  text-align: center;
+}
+
+.image-container p {
+  max-width: 16.8rem;
+}
+
+.align-button {
+  text-align: center;
+}
+
+.a-tremour-in-the-morning-container {
+  grid-template-areas: 
+  "d e"
+  "d f";
+}
+
+.photo1-a-tremour-in-the-morning {
+  grid-area: d;
+}
+
+.photo2-a-tremour-in-the-morning {
+  grid-area: e;
+}
+
+.photo3-a-tremour-in-the-morning {
+  grid-area: f;
+}
+
+.text-container h2 {
+  max-width: 25rem;
+}
+
+.alex-and-ada-main-container, .pas-de-deuxe-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%; 
+  /* gap: 7.5rem; */
+}
+
+.photos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  position: relative;
+  /* gap: 5rem; */
+}
+
+.photos-container img {
+  z-index: 5;
+}
+
+.pas-de-deuxe-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  gap: 4%;;
+  /* gap: 3.5rem; */
+}

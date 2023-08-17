@@ -14,6 +14,10 @@
     align-items: center;
     gap: 0;
   }
+
+  .paint-stain-1 {
+  top: 150vh;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -22,6 +26,23 @@
     flex-direction: column;
     gap: 0;
     margin: 0 auto;
+  }
+
+  .paint-stain-1 {
+    top: 190vh;
+    }
+
+  .paint-stain-1 img {
+    width: 437px;
+    height: 543px;
+  }
+
+  .face-of-poet-photos-container, .pas-de-deuxe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
   }
 }
 
@@ -54,6 +75,18 @@
   }
 
   .main-container-artistic-style {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .a-tremour-in-the-morning-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alex-and-ada-main-container {
     flex-direction: column;
     gap: 3rem;
   }
@@ -123,6 +156,39 @@
     height: 120vh;
   }
 
+  .title-page {
+    font-size: 3rem;
+  }
+
+  .paint-stain-1 {
+    top: 245vh;
+    }
+
+  .paint-stain-1 img {
+    width: 337px;
+    height: 443px;
+  }
+
+  .photos-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .photos-container img:nth-child(2) {
+    width: 322px;
+    height: 553px;
+  }
+
+  .paint-stain-2 img {
+    width: 380px;
+    height: 356px;
+  }
+
+  .paint-stain-2 {
+    top: -20%;
+    left:7%;
+  }
+
 }
 
 @media (max-width: 730px) {
@@ -147,9 +213,13 @@
     height: 170vh;
   }  
 
-
   .colored-container {
     flex-direction: column;
+  }
+
+  .title-page {
+    left: 38%;
+    font-size: 2.5rem;
   }
 
   .container-text {
@@ -157,6 +227,21 @@
     margin-right: 0;
     justify-content: center;
     align-items: center;
+  }
+
+  .main-container, .pas-de-deuxe-main-container {
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-container {
+    align-items: center;
+  }
+
+  .text-container p {
+    text-align: center;
   }
 }
 
@@ -172,5 +257,10 @@
     width: 480px;
     height: 370px;
   }
+    
+    .paint-stain-1 img {
+      width: 270px;
+      height: 330px;
+    }
 }
 
