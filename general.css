@@ -103,6 +103,17 @@ button {
   height: 2rem;
  }
 
+ .gallery-orange-button {
+  font-size: 1.25rem;
+  width: 284px;
+  height: 73px;
+  border-radius: 68px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--light-text-color);
+  font-family: var(--lato-font-family);
+  font-weight: var(--font-weight-400);
+}
 
  /* footer */
  
