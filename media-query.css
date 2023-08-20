@@ -1,6 +1,4 @@
-
 @media (max-width: 1650px) {
-
   .films-video-paint-stain {
     top: -50%;
     left: 18%;
@@ -8,7 +6,6 @@
 }
 
 @media (max-width: 1500px) {
-  
   .box-container {
     max-width: 1000px;
   }
@@ -44,10 +41,23 @@
     width: 588px;
     height: 491px;
   }
+
+  .active-image {
+    width: 468px;
+  }
+
+  .inactive-image {
+    width: 114px;
+    height: 300px;
+  }
+
+  .dot-artist-carousel {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media (max-width: 1200px) {
-
   .studies-section {
     flex-direction: column;
     gap: 0;
@@ -56,14 +66,15 @@
 
   .paint-stain-1 {
     top: 190vh;
-    }
+  }
 
   .paint-stain-1 img {
     width: 437px;
     height: 543px;
   }
 
-  .face-of-poet-photos-container, .pas-de-deuxe-container {
+  .face-of-poet-photos-container,
+  .pas-de-deuxe-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,28 +108,36 @@
   .magazine-collaborations .orange-button {
     width: 15.5rem;
   }
+
+  .awards-main-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .award-img-main-text-container {
+    justify-content: start;
+  }
 }
 
 @media (max-width: 1070px) {
-  
   .box-container {
     max-width: 900px;
   }
-  
+
   .main-footer-container {
     flex-wrap: wrap;
     gap: 10px;
   }
 
-   .links-container {
-     flex-direction: column;
-      gap: 10px;
-   }
-   
-   .wrapper i:first-child {
-     left: -8px;
+  .links-container {
+    flex-direction: column;
+    gap: 10px;
   }
-  
+
+  .wrapper i:first-child {
+    left: -8px;
+  }
+
   .wrapper i:last-child {
     right: -8px;
   }
@@ -132,7 +151,8 @@
     gap: 3rem;
   }
 
-  .a-tremour-in-the-morning-container, .dance-collaborations {
+  .a-tremour-in-the-morning-container,
+  .dance-collaborations {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,13 +172,23 @@
   .films-video-circle-main-container {
     flex-wrap: wrap;
   }
+
+  .nominalization-main-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nomonalizations-text-container {
+    max-width: 600px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 960px) {
   :root {
     font-size: 15px;
   }
-  
+
   .carousel img {
     width: calc(100% / 2);
   }
@@ -166,7 +196,7 @@
   .nav-links {
     display: none;
   }
-  
+
   .box-container {
     max-width: 700px;
   }
@@ -202,14 +232,15 @@
     width: 100%;
     height: 100%;
   }
-  
+
   .main-container-childhood img {
     object-fit: cover;
     width: 600px;
     height: 570px;
   }
 
-  .div-play-button, .video-katz {
+  .div-play-button,
+  .video-katz {
     width: 600px;
     height: 430px;
   }
@@ -224,7 +255,7 @@
 
   .paint-stain-1 {
     top: 245vh;
-    }
+  }
 
   .paint-stain-1 img {
     width: 337px;
@@ -248,24 +279,37 @@
 
   .paint-stain-2 {
     top: -20%;
-    left:7%;
+    left: 7%;
   }
 
+  .active-image {
+    width: 388px;
+  }
+
+  .inactive-image {
+    width: 56px;
+    height: 239px;
+  }
+
+  .nominalization-main-container img {
+    width: 413px;
+    height: 282px;
+  }
 }
 
 @media (max-width: 730px) {
-  
   :root {
     font-size: 14px;
   }
-  
+
   .carousel img {
     width: 100%;
   }
 
-  .links-container, .input-button {
+  .links-container,
+  .input-button {
     margin-top: 20px;
-   }
+  }
 
   .box-container {
     max-width: 400px;
@@ -273,7 +317,7 @@
 
   .artistic-style-section {
     height: 170vh;
-  }  
+  }
 
   .colored-container {
     flex-direction: column;
@@ -291,13 +335,14 @@
     align-items: center;
   }
 
-  .main-container, .pas-de-deuxe-main-container {
+  .main-container,
+  .pas-de-deuxe-main-container {
     flex-direction: column;
     gap: 3rem;
     justify-content: center;
     align-items: center;
   }
-  
+
   .text-container {
     align-items: center;
   }
@@ -305,34 +350,42 @@
   .text-container p {
     text-align: center;
   }
+
+  .active-image {
+    width: 361px;
+  }
+
+  .inactive-image {
+    width: 26px;
+    height: 218px;
+  }
 }
 
 @media (max-width: 620px) {
-
   .main-container-childhood img {
     object-fit: cover;
     width: 470px;
     height: 440px;
   }
 
-  .div-play-button, .video-katz {
+  .div-play-button,
+  .video-katz {
     width: 480px;
     height: 370px;
   }
-    
-    .paint-stain-1 img {
-      width: 270px;
-      height: 330px;
-    }
 
-    .dance-collaborations img {
-      width: 480px;
-      height: 410px;
-    }
+  .paint-stain-1 img {
+    width: 270px;
+    height: 330px;
+  }
 
-    .public-art-containers-2 img {
-      width: 480px;
-      height: 349px;
-    }
+  .dance-collaborations img {
+    width: 480px;
+    height: 410px;
+  }
+
+  .public-art-containers-2 img {
+    width: 480px;
+    height: 349px;
+  }
 }
-

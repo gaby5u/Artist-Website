@@ -1,0 +1,146 @@
+@import url(../general.css);
+
+nav {
+  background-color: var(--primary-darck-color);
+}
+
+.artist-photo-carousel {
+  padding-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.image-container img {
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  filter: blur(0px);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
+}
+
+.active-image {
+  filter: blur(0px);
+}
+
+.inactive-image {
+  object-fit: cover;
+  width: 200px;
+  height: 391px;
+  filter: blur(1.2px);
+}
+
+.dots-artist-carousel {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot-artist-carousel {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-darck-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot-artist-carousel:hover {
+  background-color: grey;
+  transition: 0.2s ease-in;
+}
+
+.active-dot-artist-carousel {
+  background-color: var(--primary-color);
+  transition: 0.2s ease-in;
+}
+
+/* beige-section */
+
+.beige-section h2,
+.white-section h2 {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+  text-align: center;
+}
+
+.beige-section h5,
+.award-container p {
+  font-family: var(--lato-font-family);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.awards-main-container,
+.award-img-main-text-container {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.award-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.award-container p {
+  max-width: 700px;
+  text-align: start;
+  margin: 0;
+}
+
+.award-img-main-text-container h5 {
+  margin: 0;
+  font-weight: var(--font-weight-700);
+  text-align: start;
+}
+
+/* white-section */
+
+.white-section h2 {
+  text-align: start;
+}
+
+.nominalization-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.nominalization-main-container img {
+  width: 582px;
+  height: 397px;
+}
+
+.nominalization-main-container h5 {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2rem;
+  font-weight: var(--font-weight-700);
+}
+
+.nominalization-main-container p {
+  font-family: var(--lato-font-family);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2rem;
+  margin-bottom: 4rem;
+}

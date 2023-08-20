@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bibliografie</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="../media-query.css">
-</head>
-<body>
-  <section class="home-page">
-    <header>
-      <nav class="main-nav">
-        <a href="../index.html">
-          <img src="../img/logo.png" alt="Logo">
-        </a>
+  <head>
+    <title>Bibliografie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../media-query.css" />
+  </head>
+  <body>
+    <section class="home-page">
+      <header>
+        <nav class="main-nav">
+          <a href="../index.html">
+            <img src="../img/logo.png" alt="Logo" />
+          </a>
           <div class="menu-toggle" onclick="menuToggle()"></div>
-        <ul class="nav-links">
-          <div class="close-button-menu-toggle" onclick="menuToggle()"></div>
-          <li>
-            <a href="../bibliografie/" class="main-nav-link">Bibliografie</a>
-          </li>
-          <li>
-            <a href="../galerie/" class="main-nav-link">Galerie</a>
-          </li> 
-          <li>
-            <a href="../proiecte/" class="main-nav-link">Proiecte</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">Aprecieri</a>
-          </li>
-          <li>
-            <a href="#" class="main-nav-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </section>
+          <ul class="nav-links">
+            <div class="close-button-menu-toggle" onclick="menuToggle()"></div>
+            <li>
+              <a href="../bibliografie/" class="main-nav-link">Bibliografie</a>
+            </li>
+            <li>
+              <a href="../galerie/" class="main-nav-link">Galerie</a>
+            </li>
+            <li>
+              <a href="../proiecte/" class="main-nav-link">Proiecte</a>
+            </li>
+            <li>
+              <a href="../aprecieri/" class="main-nav-link">Aprecieri</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
 
-  <section class="beige-section">
-    <div class="main-container-childhood box-container">
-      <div class="text-container-childhood">
-        <h2>Copilărie</h2>
-        <p>Alex Katz (născut la 24 iulie 1927) este un artist figurativ american cunoscut 
-          pentru picturile, sculpturile și imprimeurile sale.
-          <br>
-          <br>
-          Katz, născut în Brooklyn, 
-          New York, este renumit pentru picturile sale mari, cu simplitate îndrăzneață 
-          și culori intense, care au fost precursori ale Pop Art. A studiat la Cooper 
-          Union și la Skowhegan School of Painting and Sculpture. Lucrările sale constau 
-          în principal din portrete și peisaje, prezentând adesea peisaje din New York și 
-          Maine, precum și portrete ale membrilor familiei și ale unor personaje proeminente. 
-          Katz este cunoscut pentru planeitatea sa de culoare și formă, economia de linie 
-          și detașarea emoțională rece. A produs peste 400 de ediții tipărite și a expus 
-          în peste 200 de expoziții personale și 500 de grupe la nivel internațional. 
-          Lucrările sale pot fi găsite în colecțiile a peste 100 de instituții publice 
-          din întreaga lume.</p>
-      </div>
-      <img src="../img/biblioghaphy-img/childhood-alex-photo.png" alt="Childhood Alex Photo">
-    </div>
-  </section>
-
-  <section class="white-section">
-    <h2>Cronologie</h2>
-    <div class="brown-section">
-
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <div>
-          <span class="close-modal" onclick="closeModal()">&#x2715;</span>
-          </div>
-          <h3 class="year"></h3>
-          <p class="text"></p>
-          <img src="../img/biblioghaphy-img/brush-modal.png" alt="Brush">
+    <section class="beige-section">
+      <div class="main-container-childhood box-container">
+        <div class="text-container-childhood">
+          <h2>Copilărie</h2>
+          <p>
+            Alex Katz (născut la 24 iulie 1927) este un artist figurativ
+            american cunoscut pentru picturile, sculpturile și imprimeurile
+            sale.
+            <br />
+            <br />
+            Katz, născut în Brooklyn, New York, este renumit pentru picturile
+            sale mari, cu simplitate îndrăzneață și culori intense, care au fost
+            precursori ale Pop Art. A studiat la Cooper Union și la Skowhegan
+            School of Painting and Sculpture. Lucrările sale constau în
+            principal din portrete și peisaje, prezentând adesea peisaje din New
+            York și Maine, precum și portrete ale membrilor familiei și ale unor
+            personaje proeminente. Katz este cunoscut pentru planeitatea sa de
+            culoare și formă, economia de linie și detașarea emoțională rece. A
+            produs peste 400 de ediții tipărite și a expus în peste 200 de
+            expoziții personale și 500 de grupe la nivel internațional.
+            Lucrările sale pot fi găsite în colecțiile a peste 100 de instituții
+            publice din întreaga lume.
+          </p>
         </div>
+        <img
+          src="../img/biblioghaphy-img/childhood-alex-photo.png"
+          alt="Childhood Alex Photo"
+        />
       </div>
-      
-      <div class="box-container">
-        <div class="wrapper">
-          <i id="left-arrow"></i>
-          <div class="carousel">
+    </section>
+
+    <section class="white-section">
+      <h2>Cronologie</h2>
+      <div class="brown-section">
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <div>
+              <span class="close-modal" onclick="closeModal()">&#x2715;</span>
+            </div>
+            <h3 class="year"></h3>
+            <p class="text"></p>
+            <img src="../img/biblioghaphy-img/brush-modal.png" alt="Brush" />
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="wrapper">
+            <i id="left-arrow"></i>
+            <div class="carousel">
               <p onclick="createModule(1954)">1954</p>
               <p onclick="createModule(1968)">1968</p>
               <p onclick="createModule(1974)">1974</p>
@@ -94,105 +100,126 @@
               <p onclick="createModule(2022)">2022</p>
               <p onclick="createModule(2023)">2023</p>
             </div>
-          <i id="right-arrow"></i>
+            <i id="right-arrow"></i>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section> 
+    <section class="beige-section">
+      <div class="studies-section">
+        <video
+          class="video-katz"
+          id="video"
+          src="../video/studies-alex-video.mp4"
+          poster="../img/biblioghaphy-img/image-video.png"
+        ></video>
+        <div class="div-play-button">
+          <img
+            class="play-button"
+            src="../img/icons/play-button.png"
+            alt="play button"
+          />
+        </div>
 
-  <section class="beige-section">
-    <div class="studies-section">
-      <video class="video-katz" id="video" src="../video/studies-alex-video.mp4" poster="../img/biblioghaphy-img/image-video.png"></video>
-      <div class="div-play-button">
-      <img class="play-button" src="../img/icons/play-button.png" alt="play button">
-      </div>
-
-      <div class="studies-paragraph">
-        <h2>Studii</h2>
-        <p>La Cooper Union, Katz a studiat pictura sub Morris Kantor și a fost instruit 
-          în teoriile și tehnicile artei moderne. După absolvirea în 1949, Katz a primit 
-          o bursă pentru studii de vară la Școala Skowhegan pentru Pictură și Sculptură 
-          din Maine, bursă pe care o va reînnoi în vara următoare. În anii săi la Cooper 
-          Union, Katz a fost expus în primul rând artei moderne și a fost învățat să 
-          picteze din desene. Skowhegan l-a încurajat să picteze din viață, ceea ce s-ar 
-          dovedi esențial în dezvoltarea sa ca pictor și rămâne un element de bază al 
-          practicilor sale de astăzi.</p>
+        <div class="studies-paragraph">
+          <h2>Studii</h2>
+          <p>
+            La Cooper Union, Katz a studiat pictura sub Morris Kantor și a fost
+            instruit în teoriile și tehnicile artei moderne. După absolvirea în
+            1949, Katz a primit o bursă pentru studii de vară la Școala
+            Skowhegan pentru Pictură și Sculptură din Maine, bursă pe care o va
+            reînnoi în vara următoare. În anii săi la Cooper Union, Katz a fost
+            expus în primul rând artei moderne și a fost învățat să picteze din
+            desene. Skowhegan l-a încurajat să picteze din viață, ceea ce s-ar
+            dovedi esențial în dezvoltarea sa ca pictor și rămâne un element de
+            bază al practicilor sale de astăzi.
+          </p>
           <button class="orange-button">Citește mai mult</button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="artistic-style-section">
-    <div class="main-container-artistic-style box-container">
-      <div class="colored-container">
-        <img src="../img/biblioghaphy-img/vertical-img.png" alt="Vertical Painting">
-        <div class="container-text">
-          <h2>Stilul artistic</h2>
-          <p>Picturile lui Katz sunt împărțite aproape în mod egal în genuri de 
-            portret și peisaj. Picturile sale sunt definite prin planeitatea 
-            culorii și formei lor, economia lor de linii și detașarea lor <br>
-            emoțională rece, dar seducătoare. O sursă cheie de inspirație 
-            sunt gravurile în lemn produse de artistul japonez Kitagawa Utamaro.</p>
+    <section class="artistic-style-section">
+      <div class="main-container-artistic-style box-container">
+        <div class="colored-container">
+          <img
+            src="../img/biblioghaphy-img/vertical-img.png"
+            alt="Vertical Painting"
+          />
+          <div class="container-text">
+            <h2>Stilul artistic</h2>
+            <p>
+              Picturile lui Katz sunt împărțite aproape în mod egal în genuri de
+              portret și peisaj. Picturile sale sunt definite prin planeitatea
+              culorii și formei lor, economia lor de linii și detașarea lor
+              <br />
+              emoțională rece, dar seducătoare. O sursă cheie de inspirație sunt
+              gravurile în lemn produse de artistul japonez Kitagawa Utamaro.
+            </p>
             <button>Află mai multe</button>
+          </div>
+        </div>
+        <div class="quote-container">
+          <img src="../img/biblioghaphy-img/quote.png" alt="Quote" />
+          <p>
+            Realizați un tablou la care puteți lucra o perioadă lungă de timp și
+            faceți-l să pară că nu a suferit nici un efort.
+          </p>
+          <h5>— Alex Katz</h5>
         </div>
       </div>
-      <div class="quote-container">
-        <img src="../img/biblioghaphy-img/quote.png" alt="Quote">
-        <p>Realizați un tablou la care puteți lucra o perioadă lungă de timp și 
-          faceți-l să pară că nu a suferit nici un efort.</p>
-        <h5>— Alex Katz</h5>
+    </section>
+
+    <footer>
+      <div class="social-media">
+        <a href="https://www.instagram.com/alexkatzofficial/">
+          <div class="icon-name-social-media">
+            <img src="../img/icons/instagram-icon.png" alt="Instagram-icon" />
+            <p>Instagram</p>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/AlexKatzPrints/">
+          <div class="icon-name-social-media">
+            <img src="../img/icons/facebook-icon.png" alt="facebook-icon" />
+            <p>Facebook</p>
+          </div>
+        </a>
+        <a href="https://twitter.com/alexkatz_art">
+          <div class="icon-name-social-media">
+            <img src="../img/icons/twitter-icon.png" alt="twitter-icon" />
+            <p>Twitter</p>
+          </div>
+        </a>
       </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="social-media">
-      <a href="https://www.instagram.com/alexkatzofficial/">
-        <div class="icon-name-social-media">
-          <img src="../img/icons/instagram-icon.png" alt="Instagram-icon">
-          <p>Instagram</p>
-        </div>
-      </a>
-      <a href="https://www.facebook.com/AlexKatzPrints/">
-        <div class="icon-name-social-media">
-          <img src="../img/icons/facebook-icon.png" alt="facebook-icon">
-          <p>Facebook</p>
-        </div>
-      </a>
-      <a href="https://twitter.com/alexkatz_art">
-        <div class="icon-name-social-media">
-          <img src="../img/icons/twitter-icon.png" alt="twitter-icon">
-          <p>Twitter</p>
-        </div>
-      </a>
-    </div>
+      <div class="under-line-social-media"></div>
 
-    <div class="under-line-social-media"></div>
-
-    <div class="main-footer-container">
-      <a href="../index.html">
-        <img src="../img/logo.png" alt="Logo">
-      </a>
-      <div class="input-button">
-        <input type="text" placeholder="Adresa email">
-        <button>aboneaza-te</button>
-      </div>
-      <div class="links-container">
-        <div class="left-link-container">
-          <a href="../bibliografie/">Bibliografie</a>
-          <a href="../galerie/">Galerie</a>
-          <a href="../proiecte/">Proiecte</a>
+      <div class="main-footer-container">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="Logo" />
+        </a>
+        <div class="input-button">
+          <input type="text" placeholder="Adresa email" />
+          <button>aboneaza-te</button>
         </div>
-        <div class="right-link-container">
-          <a href="№">Aprecieri</a>
-          <a href="№">Contanct</a>
+        <div class="links-container">
+          <div class="left-link-container">
+            <a href="../bibliografie/">Bibliografie</a>
+            <a href="../galerie/">Galerie</a>
+            <a href="../proiecte/">Proiecte</a>
+          </div>
+          <div class="right-link-container">
+            <a href="../aprecieri/">Aprecieri</a>
+            <a href="№">Contanct</a>
+          </div>
         </div>
       </div>
-    </div>
-    <p class="copy-right box-container">Copyright &#169; 2023 Artist | Powered by Artist</p>
-  </footer>
+      <p class="copy-right box-container">
+        Copyright &#169; 2023 Artist | Powered by Artist
+      </p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
