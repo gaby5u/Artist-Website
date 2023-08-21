@@ -1,0 +1,135 @@
+@import url(../general.css);
+
+nav {
+  background-color: var(--primary-darck-color);
+}
+
+.white-section {
+  padding-top: 10rem;
+}
+
+.contact-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.contact-text-container,
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.contact-text-container p,
+.contact-flex p {
+  font-family: var(--lato-font-family);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-400);
+  max-width: 490px;
+}
+
+.contact-text-container h2,
+h3,
+.social-media p {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+.orange-line {
+  width: 5.3rem;
+  height: 0.3rem;
+  background-color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+.contact-flex {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10%;
+}
+
+.contact-text-container h3,
+.social-media p {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.social-media-main-container {
+  display: flex;
+  gap: 10%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.brown-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--primary-darck-color);
+  position: relative;
+}
+
+.brown-circle img {
+  position: absolute;
+  top: 28%;
+  left: 28%;
+}
+
+.form-section {
+  height: 100%;
+  background-color: var(--primary-beige-color);
+  border-radius: 0px 42px;
+}
+
+.form-section h3 {
+  font-size: 1.8rem;
+  padding: 4.3rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.form-container {
+  padding: 4.3rem;
+  display: grid;
+  gap: 30px;
+}
+
+.form-container * {
+  border: none;
+}
+
+.form-container input::placeholder,
+textarea::placeholder {
+  padding: 1rem;
+  font-family: var(--lato-font-family);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+.form-container input:focus-visible,
+textarea {
+  outline: none;
+}
+
+.form-container input {
+  border-radius: 19px;
+  width: 472px;
+  height: 48px;
+}
+
+.name-second-name-container {
+  display: flex;
+  gap: 14px;
+}
+
+.name-second-name-container input {
+  width: 227px;
+}
