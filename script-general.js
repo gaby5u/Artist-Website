@@ -1,16 +1,15 @@
 //----------------------------header-on-slide--------------------------------------
 
-const header = document.querySelector('.main-nav');
+const header = document.querySelector(".main-nav");
 
 window.onscroll = changeBackgroundOnScroll = () => {
   const top = window.scrollY;
   if (top >= 100) {
-    header.classList.add('active');
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
   }
-  else {
-    header.classList.remove('active');
-  }
-}
+};
 
 //------------------------------------toggle-menu----------------------------------
 
@@ -23,4 +22,4 @@ const menuToggle = () => {
     navLinks.classList.toggle("active");
     closeButton.classList.toggle("active");
   }
-}
+};
