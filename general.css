@@ -266,6 +266,7 @@ footer {
 }
 
 .image-card p {
+  max-width: 300px;
   font-family: var(--lato-font-family);
   font-size: 1.5rem;
   font-weight: var(--font-weight-400);

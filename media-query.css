@@ -259,7 +259,8 @@
     height: 120vh;
   }
 
-  .title-page {
+  .title-page,
+  .title-page-gallery-pages {
     font-size: 3rem;
   }
 
@@ -382,6 +383,10 @@
   .name-second-name-container {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .title-page-gallery-pages {
+    font-size: 2.5rem;
   }
 }
 
