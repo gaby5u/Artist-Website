@@ -92,14 +92,16 @@ button {
 
 .orange-button {
   background-color: var(--primary-color);
-  border-radius: 1.1rem;
   border: none;
   color: var(--light-text-color);
   font-family: var(--lato-font-family);
   font-size: 1rem;
   font-weight: var(--font-weight-400);
-  max-width: 9.5rem;
-  height: 2rem;
+  /* max-width: 15.5rem; */
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  margin-top: 4rem;
 }
 
 .gallery-orange-button {
@@ -242,10 +244,6 @@ footer {
   font-weight: var(--font-weight-400);
   color: var(--light-text-color);
   text-align: center;
-}
-
-.white-section {
-  padding-top: 10rem;
 }
 
 .images-main-container {
