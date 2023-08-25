@@ -1,0 +1,346 @@
+@import url(../general.css);
+@import url(../media-query.css);
+
+.home-page {
+  background-image: url(../img/biblioghaphy-img/background-img.png);
+  height: 25vh;
+}
+
+.main-container-childhood {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 7%;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+
+.text-container-childhood {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container-childhood h2 {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+.text-container-childhood p {
+  font-family: var(--lato-font-family);
+  font-size: 20px;
+  font-weight: var(--font-weight-400);
+  line-height: 2rem;
+}
+
+.white-section {
+  padding: 0;
+}
+
+.white-section h2 {
+  text-align: center;
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+/* carousel-cronology */
+
+.brown-section {
+  padding: 50px 0;
+}
+
+.wrapper {
+  max-width: 1500px;
+  position: relative;
+}
+
+.wrapper i {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: var(--primary-darck-color);
+  height: 60px;
+  width: 50px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+  background-image: url(../img/biblioghaphy-img/left-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  display: none;
+}
+
+.wrapper i:last-child {
+  background-image: url(../img/biblioghaphy-img/right-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+}
+
+.wrapper .carousel {
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+/* .carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+} */
+
+/* .carousel.dragging p {
+  pointer-events: none;
+} */
+
+.carousel p {
+  color: #fff;
+  display: inline;
+  font-size: 35px;
+  font-family: var(--century-gothic-font-family);
+  margin: 0 35px;
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: var(--light-text-color);
+  border-radius: 8px;
+  margin: 40vh 50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  height: 300px;
+  width: 400px;
+}
+
+.modal-content div:first-child {
+  display: flex;
+  justify-content: end;
+}
+
+.close-modal {
+  cursor: pointer;
+  font-size: 1.25rem;
+  background-color: #d9d9d9;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.modal-content h3 {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+  margin-top: 1rem;
+}
+
+.modal-content p {
+  font-family: var(--lato-font-family);
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2.25rem;
+}
+
+.modal-content img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* second-section */
+
+.beige-section {
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.studies-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.video-katz {
+  object-fit: cover;
+  max-width: 800px;
+  height: 510px;
+}
+
+.div-play-button {
+  width: 800px;
+  height: 510px;
+  position: absolute;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.studies-paragraph {
+  margin: 0 4%;
+  margin-top: 1%;
+}
+
+.studies-paragraph h2 {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+.studies-paragraph p {
+  font-family: var(--lato-font-family);
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2.25rem;
+  max-width: 800px;
+}
+
+.studies-paragraph button {
+  float: right;
+  width: 17.5rem;
+  margin-bottom: 1rem;
+}
+
+.orange-button {
+  margin-top: 0;
+}
+
+/* third section */
+
+.artistic-style-section {
+  background-image: url(../img/biblioghaphy-img/background-img-artistic-style.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container-artistic-style {
+  padding-top: 15%;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.colored-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--primary-beige-color);
+  padding: 0 2px;
+}
+
+.colored-container img {
+  margin-left: 3px;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  max-width: 454px;
+}
+
+.container-text h2 {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+
+.container-text p {
+  font-family: var(--lato-font-family);
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2.25rem;
+}
+
+/* -----------------------underline-fill-button------------------------- */
+
+.underline-fill-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: var(--lato-font-family);
+  font-size: 1.15rem;
+  font-weight: var(--font-weight-400);
+  width: 130px;
+  margin-bottom: 1rem;
+  position: relative;
+  transition: all 2s;
+  width: 10rem;
+  height: 3rem;
+}
+
+.underline-fill-button::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  height: 1px;
+}
+
+.underline-fill-button:hover {
+  color: var(--light-text-color);
+  z-index: 1;
+}
+
+.underline-fill-button:hover:after {
+  z-index: -1;
+  animation: fill 1s forwards;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-darck-color);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+.quote-container p {
+  max-width: 450px;
+  font-family: var(--century-gothic-font-family);
+  font-size: 2rem;
+  font-weight: var(--font-weight-400);
+  line-height: 2.25rem;
+  color: var(--light-text-color);
+}
+
+.quote-container h5 {
+  font-family: var(--century-gothic-font-family);
+  font-size: 2.2rem;
+  font-weight: var(--font-weight-700);
+  color: var(--light-text-color);
+  float: right;
+}

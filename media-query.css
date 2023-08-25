@@ -1,0 +1,425 @@
+@media (max-width: 1650px) {
+  .films-video-paint-stain {
+    top: -50%;
+    left: 18%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .box-container {
+    max-width: 1000px;
+  }
+
+  .recent-pictures-container {
+    flex-wrap: wrap;
+  }
+
+  .main-container-childhood {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .paint-stain-1 {
+    top: 150vh;
+  }
+
+  .magazine-collaborations img {
+    width: 409px;
+    height: 562px;
+  }
+
+  .magazine-collaborations-text-container {
+    margin: 1.5rem;
+  }
+
+  .magazine-collaborations .orange-button {
+    margin-top: 0.1rem;
+  }
+
+  .dance-collaborations img {
+    width: 588px;
+    height: 491px;
+  }
+
+  .active-image {
+    width: 468px;
+  }
+
+  .inactive-image {
+    width: 114px;
+    height: 300px;
+  }
+
+  .dot-artist-carousel {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .studies-section {
+    flex-direction: column;
+    gap: 0;
+    margin: 0 auto;
+  }
+
+  .paint-stain-1 {
+    top: 190vh;
+  }
+
+  .paint-stain-1 img {
+    width: 437px;
+    height: 543px;
+  }
+
+  .face-of-poet-photos-container,
+  .pas-de-deuxe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .films-video-img img {
+    width: 382px;
+    height: 303px;
+  }
+
+  .films-video-paint-stain {
+    top: -50%;
+    left: 7%;
+  }
+
+  .magazine-collaborations img {
+    width: 381px;
+    height: 525px;
+  }
+
+  .magazine-collaborations {
+    flex-direction: column;
+  }
+
+  .magazine-collaborations-text-container {
+    align-items: center;
+  }
+
+  .magazine-collaborations .orange-button {
+    width: 15.5rem;
+  }
+
+  .awards-main-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .award-img-main-text-container {
+    justify-content: start;
+  }
+
+  .contact-main-container {
+    flex-direction: column;
+  }
+
+  .contact-text-container,
+  .social-media-main-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .fa-instagram,
+  .fa-twitter {
+    left: -10%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .box-container {
+    max-width: 900px;
+  }
+
+  .main-footer-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .links-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .wrapper i:first-child {
+    left: -8px;
+  }
+
+  .wrapper i:last-child {
+    right: -8px;
+  }
+
+  .artistic-style-section {
+    height: 130vh;
+  }
+
+  .main-container-artistic-style {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .a-tremour-in-the-morning-container,
+  .dance-collaborations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alex-and-ada-main-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .films-video-main-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .films-video-circle-main-container {
+    flex-wrap: wrap;
+  }
+
+  .nominalization-main-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nomonalizations-text-container {
+    max-width: 600px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .carousel img {
+    width: calc(100% / 2);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .box-container {
+    max-width: 700px;
+  }
+
+  /* toggle-menu */
+  .menu-toggle {
+    background-image: url(https://i.postimg.cc/qq7WKZ1m/menu.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .close-button-menu-toggle.active {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-darck-color);
+    position: fixed;
+    right: 0;
+    top: -20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-container-childhood img {
+    object-fit: cover;
+    width: 600px;
+    height: 570px;
+  }
+
+  .div-play-button,
+  .video-katz {
+    width: 600px;
+    height: 430px;
+  }
+
+  .artistic-style-section {
+    height: 120vh;
+  }
+
+  .title-page,
+  .title-page-gallery-pages {
+    font-size: 3rem;
+  }
+
+  .paint-stain-1 {
+    top: 245vh;
+  }
+
+  .paint-stain-1 img {
+    width: 337px;
+    height: 443px;
+  }
+
+  .photos-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .photos-container img:nth-child(2) {
+    width: 322px;
+    height: 553px;
+  }
+
+  .paint-stain-2 img {
+    width: 380px;
+    height: 356px;
+  }
+
+  .paint-stain-2 {
+    top: -20%;
+    left: 7%;
+  }
+
+  .active-image {
+    width: 388px;
+  }
+
+  .inactive-image {
+    width: 56px;
+    height: 239px;
+  }
+
+  .nominalization-main-container img {
+    width: 413px;
+    height: 282px;
+  }
+}
+
+@media (max-width: 730px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .carousel img {
+    width: 100%;
+  }
+
+  .links-container,
+  .input-button {
+    margin-top: 20px;
+  }
+
+  .box-container {
+    max-width: 400px;
+  }
+
+  .artistic-style-section {
+    height: 170vh;
+  }
+
+  .colored-container {
+    flex-direction: column;
+  }
+
+  .title-page {
+    left: 38%;
+    font-size: 2.5rem;
+  }
+
+  .container-text {
+    padding: 0 0.5rem;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container,
+  .pas-de-deuxe-main-container {
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    align-items: center;
+  }
+
+  .text-container p {
+    text-align: center;
+  }
+
+  .active-image {
+    width: 361px;
+  }
+
+  .inactive-image {
+    width: 26px;
+    height: 218px;
+  }
+
+  .form-section {
+    width: 470px;
+  }
+
+  .form-container input,
+  textarea {
+    width: 350px;
+  }
+
+  .name-second-name-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title-page-gallery-pages {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .main-container-childhood img {
+    object-fit: cover;
+    width: 470px;
+    height: 440px;
+  }
+
+  .div-play-button,
+  .video-katz {
+    width: 480px;
+    height: 370px;
+  }
+
+  .paint-stain-1 img {
+    width: 270px;
+    height: 330px;
+  }
+
+  .dance-collaborations img {
+    width: 480px;
+    height: 410px;
+  }
+
+  .public-art-containers-2 img {
+    width: 480px;
+    height: 349px;
+  }
+}

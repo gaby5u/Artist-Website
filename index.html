@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Artist website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-query.css" />
+  </head>
+  <body>
+    <section class="home-page" id="home-page">
+      <header>
+        <nav class="main-nav">
+          <a href="#home-page">
+            <img src="img/logo.png" alt="Logo" />
+          </a>
+          <div class="menu-toggle" onclick="menuToggle()"></div>
+          <ul class="nav-links">
+            <div class="close-button-menu-toggle" onclick="menuToggle()"></div>
+            <li>
+              <a href="biografie/" class="main-nav-link">Biografie</a>
+            </li>
+            <li>
+              <a href="galerie/" class="main-nav-link">Galerie</a>
+            </li>
+            <li>
+              <a href="proiecte/" class="main-nav-link">Proiecte</a>
+            </li>
+            <li>
+              <a href="aprecieri/" class="main-nav-link">Aprecieri</a>
+            </li>
+            <li>
+              <a href="contact/" class="main-nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <article class="main-content">
+        <h2>Explorează lumea artei cu</h2>
+        <h1>Alex Katz</h1>
+        <div class="cta-buttons">
+          <a href="biografie/">
+            <button class="border-button">Citeste mai mult</button>
+          </a>
+          <a href="galerie/">
+            <button class="cta-orange-button">Vezi galeria</button>
+          </a>
+        </div>
+      </article>
+
+      <div class="dots">
+        <span class="dot" onclick="changeSlideUsingDots(1)"></span>
+        <span class="dot" onclick="changeSlideUsingDots(2)"></span>
+        <span class="dot" onclick="changeSlideUsingDots(3)"></span>
+        <span class="dot" onclick="changeSlideUsingDots(4)"></span>
+        <span class="dot" onclick="changeSlideUsingDots(5)"></span>
+      </div>
+    </section>
+
+    <section class="section-gradient-bg">
+      <h1 class="box-container">Tablouri celebre</h1>
+      <div class="colored-wrapper">
+        <div class="wrapper box-container">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <div class="carousel">
+            <img src="img/popular-pictures-slider/img1.png" alt="image1" />
+            <img src="img/popular-pictures-slider/img2.png" alt="image2" />
+            <img src="img/popular-pictures-slider/img3.png" alt="image3" />
+            <img src="img/popular-pictures-slider/img4.png" alt="image4" />
+            <img src="img/popular-pictures-slider/img5.png" alt="image5" />
+            <img src="img/popular-pictures-slider/img6.png" alt="image6" />
+            <img src="img/popular-pictures-slider/img7.jpg" alt="image7" />
+            <img src="img/popular-pictures-slider/img8.jpg" alt="image8" />
+            <img src="img/popular-pictures-slider/img9.jpg" alt="image9" />
+            <img src="img/popular-pictures-slider/img10.jpg" alt="image10" />
+          </div>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="white-section">
+      <h1 class="box-container">Tablouri recente</h1>
+      <div class="recent-pictures-container">
+        <div class="recent-picture-container">
+          <img src="img/recent-pictures-img/picture1.png" alt="Picture1" />
+          <p>
+            Straw Hat 1, 2022 <br />
+            Archival pigment inks <br />
+            36 x 36 inches (91.4 x 91.4 cm)
+          </p>
+
+          <div class="align-button">
+            <a
+              href="https://www.rukajgallery.com/artists/108-alex-katz/works/1444-alex-katz-straw-hat-1-2022/"
+            >
+              <button class="orange-button">Afla mai multe</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="recent-picture-container">
+          <img src="img/recent-pictures-img/picture2.png" alt="Picture2" />
+          <p>
+            Yellow Flags, 2022 <br />
+            Woodcut in four colors <br />
+            20 1/4 x 30 inches
+          </p>
+
+          <div class="align-button">
+            <a href="https://fineartmultiple.com/alex-katz-yellow-flags/">
+              <button class="orange-button">Afla mai multe</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="recent-picture-container">
+          <img src="img/recent-pictures-img/picture3.png" alt="Picture2" />
+          <p>
+            Sara, 2023 <br />
+            Silkscreen in thirty-two colors <br />
+            39 x 41 inches
+          </p>
+          <div class="align-button">
+            <a href="https://www.artsy.net/artwork/alex-katz-sara-4">
+              <button class="orange-button">Afla mai multe</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="recent-picture-container">
+          <img src="img/recent-pictures-img/picture4.png" alt="Picture2" />
+          <p>
+            Tree 10, 2022 <br />
+            10-run screenprint <br />
+            37 7/8" x 37 5/8", Bleed
+          </p>
+          <div class="align-button">
+            <a href="https://www.artsy.net/artwork/alex-katz-tree-10-1">
+              <button class="orange-button">Afla mai multe</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="recent-picture-container">
+          <img src="img/recent-pictures-img/picture5.png" alt="Picture2" />
+          <p>
+            Purple Irises on Red, 2023 <br />
+            Archival pigment inks <br />
+            24 x 30 inches (61 x 76.2 cm)
+          </p>
+          <div class="align-button">
+            <a
+              href="https://www.newarteditions.com/alex-katz-purple-irises-on-red/"
+            >
+              <button class="orange-button">Afla mai multe</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-media">
+        <a href="https://www.instagram.com/alexkatzofficial/">
+          <div class="icon-name-social-media">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <p>Instagram</p>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/AlexKatzPrints/">
+          <div class="icon-name-social-media">
+            <i class="fa-brands fa-facebook-f fa-xl"></i>
+            <p>Facebook</p>
+          </div>
+        </a>
+        <a href="https://twitter.com/alexkatz_art">
+          <div class="icon-name-social-media">
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <p>Twitter</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="under-line-social-media"></div>
+
+      <div class="main-footer-container">
+        <a href="#home-page">
+          <img src="img/logo.png" alt="Logo" />
+        </a>
+        <div class="input-button">
+          <input type="text" placeholder="Adresa email" />
+          <button>aboneaza-te</button>
+        </div>
+        <div class="links-container">
+          <div class="left-link-container">
+            <a href="biografie/">Biografie</a>
+            <a href="galerie/">Galerie</a>
+            <a href="proiecte/">Proiecte</a>
+          </div>
+          <div class="right-link-container">
+            <a href="aprecieri/">Aprecieri</a>
+            <a href="contact/">Contact</a>
+          </div>
+        </div>
+      </div>
+      <p class="copy-right box-container">
+        Copyright &#169; 2023 Artist | Powered by Artist
+      </p>
+    </footer>
+
+    <script src="script-general.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
