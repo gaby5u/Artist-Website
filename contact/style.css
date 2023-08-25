@@ -74,13 +74,25 @@ h3,
   height: 70px;
   border-radius: 50%;
   background-color: var(--primary-darck-color);
+  border: 3px solid var(--light-text-color);
   position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.brown-circle img {
+.fa-instagram,
+.fa-facebook-f,
+.fa-twitter {
+  padding: 30px;
+  color: white;
   position: absolute;
-  top: 28%;
-  left: 28%;
+  top: 5%;
+  left: -5%;
+}
+
+.fa-instagram,
+.fa-twitter {
+  left: -14%;
 }
 
 .form-section {
@@ -133,3 +145,59 @@ textarea {
 .name-second-name-container input {
   width: 227px;
 }
+
+/* -----------------------------social-media-icons-hover------------------------ */
+
+.icon {
+  position: relative;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.brown-circle:hover {
+  border: 3px solid var(--primary-beige-color);
+  /* transform: rotateY(360deg); */
+}
+
+.icon:hover {
+  transform: rotateY(360deg);
+}
+
+.brown-circle::before,
+.instagram-circle::before,
+.facebook-circle::before,
+.twitter-circle::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.brown-circle:hover::before {
+  top: 0;
+}
+
+.instagram-circle::before {
+  background-color: #d62976;
+}
+
+.facebook-circle::before {
+  background-color: #3b5998;
+}
+
+.twitter-circle::before {
+  background-color: #00acee;
+}
+
+/* .fa-instagram,
+.fa-facebook-f,
+.fa-twitter {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+} */

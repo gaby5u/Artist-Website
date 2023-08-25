@@ -97,7 +97,6 @@ button {
   font-family: var(--lato-font-family);
   font-size: 1rem;
   font-weight: var(--font-weight-400);
-  /* max-width: 15.5rem; */
   width: 10rem;
   height: 3rem;
   border-radius: 1.5rem;
@@ -269,4 +268,88 @@ footer {
   font-size: 1.5rem;
   font-weight: var(--font-weight-400);
   line-height: 2rem;
+}
+
+/* ----------------------------------orange-button-hover------------------------------- */
+
+.orange-button,
+.gallery-orange-button {
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fa5c00;
+    transition: all 0.5s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+/* -----------------------------------footer-button-hover----------------------- */
+
+.input-button button:hover {
+  background-color: #fa5c00;
+  transition: ease-out 0.5s;
+}
+
+/* ------------------------------------footer-links-hover--------------------------- */
+
+.links-container a:hover {
+  color: var(--primary-color);
+  transition: ease-out 0.3s;
+}
+
+/* --------------------------footer-social-media-icons-hover------------------------- */
+
+/* .icon-name-social-media:hover {
+  color: #3b5998;
+} */
+
+/* .fa-facebook-f:hover {
+  color: #3b5998;
+  transition: ease-out 0.3s;
+} */
+
+/* --------------------------------------nav-links-hover----------------------------- */
+
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #ff7e33, #ff7e33 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    position: absolute;
+    background: #ff7e33;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-position: 0%;
+    &:before {
+      width: 100%;
+    }
+  }
 }

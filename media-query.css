@@ -127,6 +127,11 @@
     justify-content: center;
     text-align: center;
   }
+
+  .fa-instagram,
+  .fa-twitter {
+    left: -10%;
+  }
 }
 
 @media (max-width: 1070px) {

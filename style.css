@@ -185,3 +185,61 @@
 .orange-button {
   margin: 0;
 }
+
+/* border-button-hover */
+
+.border-button,
+.cta-orange-button {
+  overflow: hidden;
+  transition: all 0.35s;
+  position: relative;
+  z-index: 10;
+}
+
+.border-button:before,
+.border-button::after,
+.cta-orange-button::before,
+.cta-orange-button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: var(--primary-beige-color);
+  transition: all 0.35s;
+  z-index: -1;
+}
+
+.border-button:before,
+.cta-orange-button::before {
+  opacity: 0.6;
+}
+
+.border-button:after,
+.cta-orange-button::after {
+  transition-delay: 0.2s;
+}
+
+.cta-buttons a:first-child button:hover,
+.cta-buttons a:last-child button:hover {
+  border: 2px solid var(--primary-beige-color);
+  color: var(--primary-darck-color);
+}
+
+.border-button:hover:before,
+.border-button:hover:after,
+.cta-orange-button:hover:before,
+.cta-orange-button:hover:after {
+  top: 0;
+}
+
+/* .cta-orange-button::before,
+.cta-orange-button::after {
+  background-color: #fc6b17;
+}
+
+.cta-buttons a:last-child button:hover {
+  border: 2px solid #fc6b17;
+  color: white;
+} */
